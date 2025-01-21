@@ -1,4 +1,5 @@
-.services{
+/* Services Section */
+.services {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,21 +7,25 @@
     gap: 80px;
     margin: 80px 170px;
 }
-.services-title{
+
+.services-title {
     position: relative;
 }
-.services-title h1{
+
+.services-title h1 {
     padding: 0px 30px;
     font-size: 80px;
     font-weight: 600;
 }
-.services-title img{
+
+.services-title img {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
 }
-.services-format{
+
+.services-format {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,75 +36,109 @@
     transition: 0.4s;
     cursor: pointer;
     box-shadow: 0px 0px 3px 3px gray;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s ease;
 }
-.services-container{
+
+.services-format.hovered {
+    opacity: 1;
+    transform: scale(1.05) translateY(-5px);
+}
+
+.services-format:not(.hovered) {
+    opacity: 0.3;
+    transform: scale(0.95);
+}
+
+.services-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     margin-bottom: 80px;
 }
-.services-format h3{
+
+.services-format h3 {
     font-size: 28px;
     font-weight: 600;
 }
-.services-format h2{
+
+.services-format h2 {
     font-size: 38px;
     font-weight: 800;
-    background: linear-gradient(270deg, #DF8908 50%,#B415FF 100%);
+    background: linear-gradient(270deg, #DF8908 50%, #B415FF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.services-format p{
+
+.services-format p {
     color: #d4d4d4;
     font-size: 24px;
     line-height: 40px;
     max-width: 300px;
 }
-.services-readmore{
-   text-align: center;
-   gap: 20px;
+
+.services-readmore {
+    text-align: center;
+    gap: 20px;
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
-.services-format:hover{
-    border: 2px solid#ff00ff;
-    background: linear-gradient(45deg,#3f0028,#522300);
-    transform: scale(1.05);
-    transition: 0.4s;
-    box-shadow: 0px 0px 10px 5px #DF8908;
+
+.services-readmore img {
+    transition: transform 0.3s;
 }
-@media(max-width:768px){
-    .services{
+
+.services-readmore:hover img {
+    transform: translateX(5px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Adjust the services container layout for mobile */
+    .services {
         align-items: start;
         gap: 70px;
         margin: 20px 70px;
     }
-    .services-title h1{
+
+    .services-title h1 {
         padding: 0;
         font-size: 50px;
     }
-    .services-title img{
+
+    .services-title img {
         width: 130px;
         margin-right: -20px;
     }
-    .services-format{
+
+    /* Update format box padding */
+    .services-format {
         gap: 20px;
         padding: 32px;
     }
-    .services-format h2{
+
+    /* Adjust heading size for mobile */
+    .services-format h2 {
         font-size: 28px;
     }
-    .services-format p{
+
+    /* Update paragraph font size for better readability */
+    .services-format p {
         font-size: 18px;
         line-height: 32px;
         max-width: 300px;
     }
-    .services-readmore img{
+
+    /* Update readmore button size */
+    .services-readmore img {
         width: 20px;
     }
-    .services-container{
+
+    /* Update the grid layout for mobile */
+    .services-container {
         grid-template-columns: 1fr 1fr;
         gap: 30px;
     }

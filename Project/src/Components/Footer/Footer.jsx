@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer-top-left">
           {/* <h1>KiraN</h1> */}
             {/* <img src={theme_pattern} alt="" /> */}
-            <p>As a proficient Frontend Developer, I possess a strong sense of design aesthetics and a profound grasp of user experience principles.</p>
+            <p>As a proficient Full-stack Developer, I possess a strong sense of design aesthetics and a profound grasp of user experience principles.</p>
         </div>
         <div className="footer-top-right">
             <div className="footer-email-input">
@@ -22,7 +22,7 @@ const Footer = () => {
       </div>
       <hr />
       <div className="footer-bottom">
-        <p className="footer-bottom-left">👁️ 2024 kiran. All rights reserved.</p>
+        <p className="footer-bottom-left">© 2024 kiran. All rights reserved.</p>
         <div>
         <h3>Forge a connection on</h3> 
 <div class="social-login-icons">

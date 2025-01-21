@@ -7,7 +7,7 @@ const About = () => {
     <div id='about' className='about'>
       <div className="about-title">
         <h1>About Me</h1>
-        {/* <img src={theme_pattern} alt="" /> */}
+        
       </div>
       <div className="about_sections">
       <div className="about_left">
@@ -15,10 +15,10 @@ const About = () => {
       </div>
         <div className="about-right">
             <div className="about-para">
-                <p>I am a skilled Frontend Developer with a keen eye for design and a deep understanding of user experience. I specialize in transforming ideas into visually appealing 
+                <p>I am a skilled Full-stack Developer with a keen eye for design and a deep understanding of user experience. I specialize in transforming ideas into visually appealing 
                     and responsive web applications using modern web technologies. My focus is on writing clean, efficient code that ensures seamless functionality across devices, 
                     creating a smooth and engaging experience for users. Passionate about continuous learning, I stay updated with the latest trends to bring innovative solutions to every project.</p>
-                <p>My passion for Frontend development is not only reflected in my extensive experience but also in the enthusiasm and dedication I bring to each project.</p>
+                <p>My passion for Full-stack development is not only reflected in my extensive experience but also in the enthusiasm and dedication I bring to each project.</p>
             </div>
             <div className="about-skills">
                 <div className="about_skill"><p>REACT JS</p><hr style={{width:"95%"}} /></div>

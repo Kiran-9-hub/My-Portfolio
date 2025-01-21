@@ -48,15 +48,15 @@ const Contact = () => {
                    <img src={call_icon} alt="" /> <p>+91-8917315757</p>
                 </div>
                 <div className="contact-detail">
-                  <img src={location_icon} alt="" />  <p>Bhubaneswar,India</p>
+                  <img src={location_icon} alt="" />  <p>Bengaluru,Karnataka</p>
                 </div>
             </div>
         </div>
         <form  onSubmit={onSubmit} className="contact-right">
             <label htmlFor="name">Your  Name</label>
-            <input type="text" placeholder='Enter your name' name='name' />
+            <input type="text" placeholder='Enter your name' name='name' required />
             <label htmlFor="email">Your Email</label>
-            <input type="email" placeholder='Enter your email' name='email' />
+            <input type="email" placeholder='Enter your email' name='email' required />
             <label htmlFor="message">Write your Message here</label>
             <textarea name="message" rows="6" placeholder='Enter your message'></textarea>
             <button type='submit' className="contact-submit">Submit now</button>
